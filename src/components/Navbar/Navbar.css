@@ -1,0 +1,86 @@
+.navbarContainer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    z-index: 99;
+}
+
+.navbar {
+    width: 82%;
+    height: 40px;
+    background-color: #2A2234;
+    border-radius: 1rem;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbarLogo img {
+    cursor: pointer;
+}
+
+.navbarItems {
+    margin-left: auto;
+    position: relative;
+    left: -55px;
+    font-size: 18px;
+    font-family: 'SpaceGroteskLight';
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbarItems a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbarItems a:hover {
+    color: #AD1AAF;
+}
+
+#toggleLanguage {
+    display: none;
+}
+
+#labelToggleLanguage {
+    color: #ffffff;
+    background-color: #090E16;
+    width: 55px;
+    height: 25px;
+    margin: 2px 0 0 35px;
+    display: inline-block;
+    border-radius: .7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    font-family: 'SpaceGroteskLight';
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sliderLanguage {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #AD1AAF;
+    margin-left: -10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.spanToggleLanguage {
+    font-size: 12px;
+    color: #ffffff;
+    user-select: none;
+}
+
+#toggleLanguage:checked + #labelToggleLanguage .sliderLanguage {
+    transform: translateX(48px);
+}

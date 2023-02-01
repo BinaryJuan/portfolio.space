@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* SpaceGrotesk font-family import */
+@font-face {
+  font-family: 'SpaceGroteskLight';
+  src: local('SpaceGrotesk-Light'),
+  url('./fonts/space-grotesk/SpaceGrotesk-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SpaceGroteskMedium';
+  src: local('SpaceGrotesk-Medium'),
+  url('./fonts/space-grotesk/SpaceGrotesk-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SpaceGroteskRegular';
+  src: local('SpaceGrotesk-Regular'),
+  url('./fonts/space-grotesk/SpaceGrotesk-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SpaceGroteskBold';
+  src: local('SpaceGrotesk-Bold'),
+  url('./fonts/space-grotesk/SpaceGrotesk-Bold.ttf') format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scrollbar-width: none; /* firefox */
 }
+
+html::-webkit-scrollbar {
+  display: none; /* chrome */
+}
+
+body {
+  margin: 0;
+  color: white;
+  font-family: 'SpaceGroteskRegular';
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  height: 1000px;
+}
+
+@keyframes shootingStar {
+  80% {opacity: 0;}
+  100% {transform: translate(100vw, 120px) rotate(20deg); opacity: 0;}
+}
+
+@keyframes shootingStarInv {
+  80% {opacity: 0;}
+  100% {transform: translate(100vw, -100px) rotate(-20deg); opacity: 0;}
+}
+
+/* ===== GENERAL STYLING ===== */

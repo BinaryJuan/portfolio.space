@@ -1,0 +1,38 @@
+/* Shooting stars */
+.shootingStar:nth-child(1) {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    left: -100px;
+    top: 100px;
+    animation: shootingStar 4s ease-out 3s infinite;
+    z-index: 1;
+}
+
+.shootingStar:nth-child(2) {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    right: -100px;
+    rotate: 180deg;
+    top: 250px;
+    animation: shootingStarInv 4s ease-out 5s infinite;
+    z-index: 1;
+}
+
+.starTail {
+    width: 0;
+    height: 0;
+    border: 1px solid transparent;
+    rotate: 270deg;
+    border-top: 0;
+    border-bottom: 140px solid aliceblue;
+    position: absolute;
+    left: -68px;
+    top: -67.55px;
+    background-color: transparent;
+}
