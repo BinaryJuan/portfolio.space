@@ -5,6 +5,11 @@ import SpaceBackground from './components/SpaceBackground/SpaceBackground'
 import ShootingStars from './components/ShootingStars/ShootingStars'
 import Navbar from './components/Navbar/Navbar'
 import Presentation from './components/Presentation/Presentation'
+import AboutMe from './components/AboutMe/AboutMe'
+import Portfolio from './components/Portfolio/Portfolio'
+import Skills from './components/Skills/Skills'
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 // IMPORT: FONTS
 import './fonts/raleway/Raleway-Light.ttf'
 import './fonts/raleway/Raleway-Medium.ttf'
@@ -36,6 +41,11 @@ const App = () => {
       <ShootingStars />
       <Navbar />
       <Presentation />
+      <AboutMe />
+      <Portfolio />
+      <Skills />
+      <Contact />
+      <Footer />
     </div>
   )
 }

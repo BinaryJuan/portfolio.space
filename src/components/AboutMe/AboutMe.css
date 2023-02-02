@@ -1,0 +1,35 @@
+.aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 160px;
+}
+
+.aboutMe {
+    width: 84.2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.aboutMe h3 {
+    font-family: 'RalewayExtraBold';
+    font-size: 40px;
+    margin-bottom: 16px;
+    margin: 0;
+    user-select: none;
+}
+
+.aboutMe p {
+    margin-left: 160px;
+    margin-top: 55px;
+    font-size: 32px;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.aboutMe p span {
+    color: #AD1AAF;
+}

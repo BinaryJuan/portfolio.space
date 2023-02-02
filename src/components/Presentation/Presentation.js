@@ -52,7 +52,7 @@ const Presentation = () => {
                             <h3 className='desc'>Full-Stack</h3>
                         </div>
                         <div>
-                            <h3 className='title'>Dozens of projects and</h3>
+                            <h3 className='title'>Lots of projects and</h3>
                             <h3 className='desc'>Experience</h3>
                         </div>
                     </div>

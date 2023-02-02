@@ -1,0 +1,158 @@
+.portfolioContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.portfolio {
+    width: 84.2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.portfolio h3 {
+    font-family: 'RalewayExtraBold';
+    font-size: 40px;
+    margin-bottom: 16px;
+    margin: 0;
+    user-select: none;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 70px;
+    gap: 60px;
+    z-index: 1;
+}
+
+.projectContainer {
+    background: rgb(173,26,175);
+    background: linear-gradient(137deg, rgba(173,26,175,1) 8%, rgba(154,26,156,1) 43%, rgba(142,13,180,1) 65%, rgba(118,4,175,1) 100%); 
+    width: 350px;
+    height: 470px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 99.5%;
+    height: 99.5%;
+    border-radius: 1rem;
+    background-color: #140c1f;
+}
+
+.content {
+    width: 87%;
+}
+
+.status {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.status svg {
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.projectStatusLive {
+    color: #4AE290;
+    background-color: rgb(74, 226, 144, 0.3);
+    font-size: 18px;
+    font-family: 'RalewayBold';
+    padding: 8px 22px;
+    border-radius: .6rem;
+    user-select: none;
+}
+
+.projectStatusPending {
+    color: #e97020;
+    background-color: rgb(233, 112, 32, 0.3);
+    font-size: 18px;
+    font-family: 'RalewayBold';
+    padding: 8px 22px;
+    border-radius: .6rem;
+    user-select: none;
+}
+
+.content p {
+    color: rgb(255, 255, 255, 0.5);
+    font-family: 'RalewayLight';
+    font-size: 16px;
+    word-spacing: 1.5px;
+    margin-top: 25px;
+}
+
+.content img {
+    border-radius: .8rem;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+.content a {
+    text-decoration: none;
+    color: #b8b8b8;
+    font-family: 'RalewayBold';
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+    margin-left: 50%;
+}
+
+.content a:hover {
+    color: rgb(230, 230, 230);
+    transition: all 0.2s ease-in-out;
+}
+
+.projectLink svg {
+    font-size: .9rem;
+}
+
+.technologies {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-family: 'RalewayBold';
+    font-size: 16px;
+    color: #AD1AAF;
+    margin-top: 10px;
+}
+
+.githubLink {
+    font-size: 20px;
+    font-family: 'RalewaySemiBold';
+    text-decoration: none;
+    color: rgb(173, 26, 175, 0.6);
+    transition: all 0.2s ease-in-out;
+    margin-top: 40px;
+    margin-left: auto;
+    position: relative;
+    left: -30px;
+}
+
+.githubLink:hover {
+    color: rgb(173, 26, 175, 1);
+    transform: all 0.2s ease-in-out;
+}
