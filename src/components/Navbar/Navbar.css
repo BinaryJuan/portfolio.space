@@ -7,6 +7,7 @@
     justify-content: center;
     margin-top: 50px;
     z-index: 99;
+    user-select: none;
 }
 
 .navbar {
@@ -28,20 +29,22 @@
     position: relative;
     left: -55px;
     font-size: 18px;
-    font-family: 'SpaceGroteskLight';
+    font-family: 'RalewayLight';
     display: flex;
     gap: 30px;
     align-items: center;
 }
 
 .navbarItems a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .navbarItems a:hover {
     color: #AD1AAF;
+    transition: all 0.2s ease-in-out;
 }
 
 #toggleLanguage {
@@ -60,7 +63,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-    font-family: 'SpaceGroteskLight';
+    font-family: 'RalewayLight';
     font-weight: bold;
     cursor: pointer;
 }

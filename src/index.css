@@ -1,23 +1,33 @@
-/* SpaceGrotesk font-family import */
+/* Raleway font-family import */
 @font-face {
-  font-family: 'SpaceGroteskLight';
-  src: local('SpaceGrotesk-Light'),
-  url('./fonts/space-grotesk/SpaceGrotesk-Light.ttf') format('truetype');
+  font-family: 'RalewayLight';
+  src: local('Raleway-Light'),
+  url('./fonts/raleway/Raleway-Light.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'SpaceGroteskMedium';
-  src: local('SpaceGrotesk-Medium'),
-  url('./fonts/space-grotesk/SpaceGrotesk-Medium.ttf') format('truetype');
+  font-family: 'RalewayMedium';
+  src: local('Raleway-Medium'),
+  url('./fonts/raleway/Raleway-Medium.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'SpaceGroteskRegular';
-  src: local('SpaceGrotesk-Regular'),
-  url('./fonts/space-grotesk/SpaceGrotesk-Regular.ttf') format('truetype');
+  font-family: 'RalewayRegular';
+  src: local('Raleway-Regular'),
+  url('./fonts/raleway/Raleway-Regular.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'SpaceGroteskBold';
-  src: local('SpaceGrotesk-Bold'),
-  url('./fonts/space-grotesk/SpaceGrotesk-Bold.ttf') format('truetype');
+  font-family: 'RalewaySemibold';
+  src: local('Raleway-SemiBold'),
+  url('./fonts/raleway/Raleway-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'RalewayBold';
+  src: local('Raleway-Bold'),
+  url('./fonts/raleway/Raleway-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'RalewayExtraBold';
+  src: local('Raleway-ExtraBold'),
+  url('./fonts/raleway/Raleway-ExtraBold.ttf') format('truetype');
 }
 
 html {
@@ -30,21 +40,11 @@ html::-webkit-scrollbar {
 
 body {
   margin: 0;
-  color: white;
-  font-family: 'SpaceGroteskRegular';
+  color: #ffffff;
+  font-family: 'RalewayRegular';
   scroll-behavior: smooth;
   overflow-x: hidden;
   height: 1000px;
-}
-
-@keyframes shootingStar {
-  80% {opacity: 0;}
-  100% {transform: translate(100vw, 120px) rotate(20deg); opacity: 0;}
-}
-
-@keyframes shootingStarInv {
-  80% {opacity: 0;}
-  100% {transform: translate(100vw, -100px) rotate(-20deg); opacity: 0;}
 }
 
 /* ===== GENERAL STYLING ===== */

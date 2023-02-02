@@ -4,11 +4,14 @@ import React, { useEffect } from 'react'
 import SpaceBackground from './components/SpaceBackground/SpaceBackground'
 import ShootingStars from './components/ShootingStars/ShootingStars'
 import Navbar from './components/Navbar/Navbar'
+import Presentation from './components/Presentation/Presentation'
 // IMPORT: FONTS
-import './fonts/space-grotesk/SpaceGrotesk-Light.ttf'
-import './fonts/space-grotesk/SpaceGrotesk-Medium.ttf'
-import './fonts/space-grotesk/SpaceGrotesk-Regular.ttf'
-import './fonts/space-grotesk/SpaceGrotesk-Bold.ttf'
+import './fonts/raleway/Raleway-Light.ttf'
+import './fonts/raleway/Raleway-Medium.ttf'
+import './fonts/raleway/Raleway-Regular.ttf'
+import './fonts/raleway/Raleway-SemiBold.ttf'
+import './fonts/raleway/Raleway-Bold.ttf'
+import './fonts/raleway/Raleway-ExtraBold.ttf'
 
 const App = () => {
   useEffect(() => {
@@ -32,6 +35,7 @@ const App = () => {
       <SpaceBackground />
       <ShootingStars />
       <Navbar />
+      <Presentation />
     </div>
   )
 }
