@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 160px;
 }
 
 .skillsContainer h3 {
@@ -35,7 +35,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
     gap: 35px;
     margin-top: 15px;
     cursor: pointer;
@@ -51,4 +51,35 @@
     color: rgb(173, 26, 175, 0.9);
     transition: all 0.5s ease-in-out;
     transform: rotate3d(1, 1, 1, 360deg);
+}
+
+@media (max-width: 850px) {
+    .skillsContainer h3 {
+        font-size: 35px;
+    }
+
+    .techsContainer h4 {
+        font-size: 20px;
+    }
+
+    .techs svg {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .skillsContainer h3 {
+        font-size: 30px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .techsContainer h4 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .techs svg {
+        font-size: 4rem;
+    }
 }

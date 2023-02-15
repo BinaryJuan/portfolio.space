@@ -8,8 +8,19 @@ const Contact = () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth',
-            duration: 1500
+            duration: 1000
         })
+    }
+
+    const copyToClipboard = () => {
+        const copyText = document.getElementById('copyText')
+        navigator.clipboard.writeText(copyText.innerText)
+        document.getElementById('copy').innerHTML = 'Copied!'
+        document.getElementById('copy').style.border = '1px solid #299646'
+        setTimeout(() => {
+            document.getElementById('copy').innerHTML = 'Copy'
+            document.getElementById('copy').style.border = '1px solid #AD1AAF'
+        }, 1200)
     }
 
     return (
@@ -17,15 +28,16 @@ const Contact = () => {
             <div className='greeting'>✉️ Contact</div>
             <h3>Let’s Talk</h3>
             <div className='contactOptions'>
-                <a className='whatsappLink' href='https://api.whatsapp.com/send?phone=541131918140' target='_blank' rel='noreferrer'><FontAwesomeIcon className='fa-gradient' icon={faWhatsapp} /> Let's talk</a>
+                <a className='whatsappLink' href='https://api.whatsapp.com/send?phone=541131918140' target='_blank' rel='noreferrer'><FontAwesomeIcon className='fa-gradient' icon={faWhatsapp} /> Message me!</a>
                 <div className='email'>
                     <h4>E-mail</h4>
-                    <p>dante_jterranova463@hotmail.com</p>
+                    <p id='copyText'>dante_jterranova463@hotmail.com</p>
                     <div className='emailOptions'>
                         <a href='mailto:dante_jterranova463@hotmail.com' target='_blank' rel='noreferrer'>
-                            <FontAwesomeIcon className='fa-gradient' icon={faPaperPlane} title='Send' />
+                            <FontAwesomeIcon className='fa-gradient' icon={faPaperPlane} />
                         </a>
-                        <FontAwesomeIcon className='fa-gradient' icon={faCopy} title='Copy' />
+                        <FontAwesomeIcon className='fa-gradient' icon={faCopy} id='copyIcon' onClick={copyToClipboard} />
+                        <span className='tooltiptext' id='copy'>Copy</span>
                     </div>
                 </div>
             </div>

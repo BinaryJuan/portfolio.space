@@ -11,6 +11,7 @@
     margin-left: auto;
     margin-right: auto;
     user-select: none;
+    position: relative;
 }
 
 .presentationElement {
@@ -82,8 +83,11 @@
     opacity: 0.8;
 }
 
+.presentation .socials li a {
+    color: #e4d8e4ad;
+}
+
 .presentation .socials li:hover {
-    color: #FFFFFF;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.6px);
     -webkit-backdrop-filter: blur(5.6px);
@@ -94,8 +98,12 @@
     transition: all .4s;
 }
 
+.presentation .socials li:hover a {
+    color: #ffffff;
+}
+
 .astronaut {
-    width: 40%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -218,13 +226,14 @@
     border: 1px solid #AD1AAF;
     border-radius: 1rem;
     padding: 8px 25px;
-    transition: all .3s;
+    transition: all .5s;
+    background-color: transparent;
 }
 
 .whatsappLink:hover {
     background-color: #AD1AAF;
     color: #ffffff;
-    transition: all .3s;
+    opacity: .9;
 }
 
 .whatsappLink svg {
@@ -309,6 +318,7 @@
     text-align: center;
     color: rgb(173, 26, 175, 0.5);
     gap: 15%;
+    z-index: 1;
 }
 
 .title {
@@ -321,4 +331,338 @@
     font-size: 32px;
     font-family: 'RalewayBold';
     margin: 0;
+}
+
+@media (max-width: 1300px) {
+    .presentation {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .cv {
+        align-items: flex-start;
+    }
+
+    .eclipse {
+        width: 400px;
+        height: 400px;
+    }
+
+    .eclipseBlur {
+        width: 400px;
+        height: 400px;
+    }
+
+    .ring {
+        width: 405px;
+        height: 405px;
+    }
+
+    .astronautImage {
+        width: 230px;
+    }
+
+    .name {
+        width: 40%;
+    }
+}
+
+@media (max-width: 950px) {
+    .name {
+        width: 30%;
+    }
+
+    .astronaut {
+        width: 60%;
+        justify-content: flex-end;
+    }
+
+    .cv {
+        width: 40%;
+    }
+}
+
+@media (max-width: 850px) {
+    .greeting {
+        font-size: 17px;
+    }
+
+    .name h1 {
+        font-size: 42px;
+    }
+
+    .name h2 {
+        font-size: 17px;
+    }
+
+    .eclipse {
+        width: 350px;
+        height: 350px;
+    }
+
+    .eclipseBlur {
+        width: 350px;
+        height: 350px;
+    }
+
+    .ring {
+        width: 355px;
+        height: 355px;
+    }
+
+    .astronautImage {
+        width: 170px;
+    }
+
+    .ringTech {
+        width: 45px;
+        height: 45px;
+    }
+
+    .ringTech svg {
+        font-size: 1.6rem;
+    }
+
+    .cv {
+        font-size: .8rem;
+    }
+
+    .cv .whatsappLink {
+        font-size: 15px;
+    }
+
+    .cv .whatsappLink svg {
+        font-size: 1.2rem;
+    }
+
+    .workBox {
+        width: 200px;
+        height: 150px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 750px) {
+    .presentation {
+        margin-top: 80px;
+    }
+
+    .astronaut {
+        width: 100%;
+        justify-content: center;
+        order: 3;
+    }
+
+    .cv {
+        order: 2;
+        width: 30%;
+        align-items: flex-end;
+    }
+
+    .name {
+        order: 1;
+        width: 50%;
+    }
+
+    .description {
+        min-width: 0px;
+        width: 80%;
+    }
+
+    .desc {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 650px) {
+    .whatsappLink {
+        white-space: nowrap
+    }
+}
+
+@media (max-width: 500px) {
+    .cv .whatsappLink {
+        padding: 8px 10px;
+        border-radius: .7rem;
+    }
+
+    .greeting {
+        font-size: 15px;
+    }
+
+    .name h1 {
+        font-size: 35px;
+    }
+
+    .presentation .socials li {
+        width: 40px;
+        height: 40px;
+        font-size: .7rem;
+    }
+
+    .downloadCv {
+        white-space: nowrap;
+    }
+
+    .astronaut {
+        margin-top: -20px;
+    }
+
+    .eclipse {
+        width: 270px;
+        height: 270px;
+    }
+
+    .eclipseBlur {
+        width: 270px;
+        height: 270px;
+    }
+
+    .ring {
+        width: 275px;
+        height: 275px;
+    }
+
+    .astronautImage {
+        width: 140px;
+    }
+
+    .ringTech {
+        width: 35px;
+        height: 35px;
+    }
+
+    .ringTech svg {
+        font-size: 1.4rem;
+    }
+
+    .name h2 {
+        white-space: nowrap;
+    }
+
+    .workBox {
+        width: 170px;
+        height: 120px;
+        font-size: 13px;
+    }
+
+    .workboxImage {
+        width: 50px;
+    }
+
+    .description {
+        height: 90px;
+    }
+
+    .title {
+        font-size: 13px;
+    }
+
+    .desc {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .presentation {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name {
+        justify-self: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .astronaut {
+        order: 2;
+        width: 100%;
+    }
+
+    .cv {
+        order: 3;
+        width: 100%;
+        align-items: center;
+    }
+
+    .workBox {
+        width: 120px;
+        height: 100px;
+        font-size: 11px;
+    }
+
+    .workboxImage {
+        width: 45px;
+    }
+
+    .description {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .eclipse {
+        width: 210px;
+        height: 210px;
+    }
+
+    .eclipseBlur {
+        width: 210px;
+        height: 210px;
+    }
+
+    .ring {
+        width: 215px;
+        height: 215px;
+    }
+
+    .astronautImage {
+        width: 110px;
+    }
+
+    .ringTech {
+        width: 30px;
+        height: 30px;
+    }
+
+    .ringTech svg {
+        font-size: 1.2rem;
+    }
+
+    .presentation {
+        gap: 30px;
+        margin-top: 70px;
+    }
+
+    .title {
+        font-size: 11px;
+    }
+
+    .desc {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 250px) {
+    .astronaut {
+        display: none;
+    }
+
+    .presentation {
+        gap: 15px;
+    }
+
+    .workBoxes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .workBox {
+        width: 170px;
+        height: 120px;
+        font-size: 13px;
+    }
 }

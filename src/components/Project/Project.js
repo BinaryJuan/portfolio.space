@@ -11,6 +11,7 @@ const Project = ({project}) => {
                         <div className={project.status === 'Live' ? 'projectStatusLive' : 'projectStatusPending'}>{project.status}</div>
                         <a href={project.github} target='_blank' rel='noreferrer'><FontAwesomeIcon className='fa-gradient' icon={faGithub} /></a>
                     </div>
+                    <h3>{project.name}</h3>
                     <p>
                         {project.description}
                     </p>

@@ -29,13 +29,14 @@
     gap: 120px;
 }
 
-.contactOptions .whatsappLink {
+.whatsappLink {
     color: rgb(173, 26, 175, 0.5);
     text-decoration: none;
     font-size: 20px;
     font-family: 'RalewayBold';
     border: 1px solid rgb(173, 26, 175, 0.5);
     padding: 15px 35px;
+    user-select: none;
 }
 
 .email {
@@ -50,11 +51,13 @@
 
 .email h4 {
     margin: 0;
+    user-select: none;
 }
 
 .emailOptions {
     display: flex;
     gap: 30px;
+    position: relative;
 }
 
 .emailOptions svg {
@@ -69,6 +72,12 @@
     transition: all 0.1s linear;
 }
 
+.whatsappLink:hover {
+    color: #ffffff;
+    border: 1px solid #AD1AAF;
+    transition: all 0.1s linear;
+}
+
 .backToTop {
     margin-top: 100px;
     color: rgb(173, 26, 175, 0.5);
@@ -76,9 +85,83 @@
     font-size: 20px;
     cursor: pointer;
     transition: all 0.1s linear;
+    user-select: none;
 }
 
 .backToTop:hover {
     color: #AD1AAF;
     transition: all 0.1s linear;
+}
+
+.tooltiptext {
+    color: #dadada;
+    background-color: transparent;
+    font-family: 'RalewayRegular';
+    font-size: 11px;
+    padding: 9px 10px;
+    border-radius: .4rem;
+    position: absolute;
+    left: 100px;
+    top: -10px;
+    visibility: hidden;
+    border: 1px solid #AD1AAF;
+    opacity: 0;
+}
+
+#copyIcon:hover ~ .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.1s linear;
+}
+
+@media (max-width: 850px) {
+    .contactContainer h3 {
+        font-size: 35px;
+    }
+
+    .contactContainer {
+        margin-top: 130px;
+    }
+
+    .contactOptions {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .whatsappLink {
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+
+    .email {
+        font-size: 18px;
+    }
+
+    .emailOptions {
+        left: 0;
+    }
+
+    .emailOptions svg {
+        font-size: 1.5rem;
+    }
+
+    .backToTop {
+        font-size: 18px;
+    }
+    
+    .contactContainer {
+        margin-bottom: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contactContainer h3 {
+        font-size: 30px;
+    }
+
+    .contactContainer p {
+        word-break: break-all;
+        text-align: center;
+        padding: 0 10px;
+    }
 }

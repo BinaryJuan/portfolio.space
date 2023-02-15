@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 160px;
 }
 
 .portfolio {
@@ -36,10 +36,9 @@
 }
 
 .projectContainer {
-    background: rgb(173,26,175);
     background: linear-gradient(137deg, rgba(173,26,175,1) 8%, rgba(154,26,156,1) 43%, rgba(142,13,180,1) 65%, rgba(118,4,175,1) 100%); 
     width: 350px;
-    height: 470px;
+    height: 490px;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -52,8 +51,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 99.5%;
-    height: 99.5%;
+    width: 99%;
+    height: 99%;
     border-radius: 1rem;
     background-color: #140c1f;
 }
@@ -99,7 +98,7 @@
     font-family: 'RalewayLight';
     font-size: 16px;
     word-spacing: 1.5px;
-    margin-top: 25px;
+    margin-top: 0;
 }
 
 .content img {
@@ -108,6 +107,15 @@
     height: 200px;
     margin-bottom: 10px;
     user-select: none;
+}
+
+.content h3 {
+    color: #b8b8b8;
+    font-family: 'RalewayBold';
+    font-size: 20px;
+    margin-bottom: 10px;
+    user-select: none;
+    margin: 20px 0 10px 0;
 }
 
 .content a {
@@ -137,6 +145,7 @@
     font-family: 'RalewayBold';
     font-size: 16px;
     color: #AD1AAF;
+    user-select: none;
     margin-top: 10px;
 }
 
@@ -147,12 +156,115 @@
     color: rgb(173, 26, 175, 0.6);
     transition: all 0.2s ease-in-out;
     margin-top: 40px;
-    margin-left: auto;
     position: relative;
-    left: -30px;
 }
 
 .githubLink:hover {
     color: rgb(173, 26, 175, 1);
     transform: all 0.2s ease-in-out;
+}
+
+@media (max-width: 1400px) {
+    .projectContainer {
+        width: 310px;
+    }
+
+    .content img {
+        width: 260px;
+        height: 170px;
+    }
+
+    .content a {
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    .projectStatusPending {
+        font-size: 16px;
+    }
+
+    .projectStatusLive {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 850px) {
+    .portfolio h3 {
+        font-size: 35px;
+    }
+
+    .content h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 810px) {
+    .projectContainer {
+        width: 280px;
+        height: 460px;
+    }
+
+    .content img {
+        width: 235px;
+        height: 140px;
+    }
+
+    .content a {
+        margin-left: 48%;
+    }
+
+    .projectStatusPending {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 715px) {
+    .projectsContainer {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 680px) {
+    .projectsContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    .githubLink {
+        margin-top: 35px;
+        margin-left: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio h3 {
+        font-size: 30px;
+        white-space: nowrap;
+    }
+
+    .content h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .portfolioContainer {
+        margin-top: 100px;
+    }
+
+    .portfolio {
+        align-items: center;
+    }
+
+    .projectsContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 35px;
+    }
 }

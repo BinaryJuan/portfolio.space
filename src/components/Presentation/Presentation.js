@@ -12,9 +12,21 @@ const Presentation = () => {
                     <h1>Dante<br/>Terranova</h1>
                     <h2>Full-Stack Developer</h2>
                     <ul className='socials'>
-                        <li><FontAwesomeIcon className='fa-gradient fa-2xl' icon={faGithub} /></li>
-                        <li><FontAwesomeIcon className='fa-gradient fa-2xl' icon={faLinkedinIn} /></li>
-                        <li><FontAwesomeIcon className='fa-gradient fa-2xl' icon={faInstagram} /></li>
+                        <li>
+                            <a href='https://github.com/BinaryJuan' target='_blank' rel='noreferrer'>
+                                <FontAwesomeIcon className='fa-gradient fa-2xl' icon={faGithub} />
+                            </a>
+                        </li>
+                        <li>
+                            <a href='https://www.linkedin.com/in/dante-terranova-2383361a4/' target='_blank' rel='noreferrer'>
+                                <FontAwesomeIcon className='fa-gradient fa-2xl' icon={faLinkedinIn} />
+                            </a>
+                        </li>
+                        <li>
+                            <a href='https://github.com/BinaryJuan' target='_blank' rel='noreferrer'>
+                                <FontAwesomeIcon className='fa-gradient fa-2xl' icon={faInstagram} />
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div className='presentationElement astronaut'>
@@ -37,11 +49,11 @@ const Presentation = () => {
             <div className='workContainer'>
                 <div className='workBoxes'>
                     <div className='workBox'>
-                        <img src='/code.svg' alt='code' />
+                        <img className='workboxImage' src='/code.svg' alt='code' />
                         <h3>Programmer</h3>
                     </div>
                     <div className='workBox'>
-                        <img src='/works.svg' alt='works' />
+                        <img className='workboxImage' src='/works.svg' alt='works' />
                         <h3>Works</h3>
                     </div>
                 </div>

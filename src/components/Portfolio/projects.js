@@ -1,84 +1,84 @@
-const projects = 
+const projects =
 [
     {
         id: 1,
-        name: 'Portfolio',
+        name: 'gomovies',
         status: 'Live',
-        description: 'This is my portfolio website. It is a single page application built with React.js. It is fully responsive and it is hosted on GitHub Pages.',
-        image: 'https://i.imgur.com/W490sCJ.png',
-        link: 'google.com',
-        github: '',
-        technologies: ['React', 'JS', 'CSS']
+        description: 'This is a similar website to IMDB, but with the difference that this fetches movies from "The Movie Database", apart from containing a minigame',
+        image: 'https://i.imgur.com/HRNoSRB.png',
+        link: 'https://gomovies.vercel.app/',
+        github: 'https://github.com/BinaryJuan/gomovies',
+        technologies: ['React', 'API', 'CSS']
     },
     {
         id: 2,
-        name: 'Portfolio',
+        name: 'AstroDonuts',
         status: 'Live',
-        description: 'This is my portfolio website. It is a single page application built with React.js. It is fully responsive and it is hosted on GitHub Pages.',
-        image: 'https://i.imgur.com/W490sCJ.png',
-        link: 'google.com',
-        github: '',
-        technologies: ['React', 'JS', 'CSS']
+        description: '2D arcade videogame made with Phaser and React. The goal is to kill as many aliens as you can while grabbing donuts',
+        image: 'https://i.imgur.com/NmRQddp.png',
+        link: 'https://astro-donuts.vercel.app/',
+        github: 'https://github.com/BinaryJuan/AstroDonuts',
+        technologies: ['React', 'Phaser', 'CSS']
     },
     {
         id: 3,
-        name: 'Portfolio',
+        name: 'Discord bot',
         status: 'Live',
-        description: 'This is my portfolio website. It is a single page application built with React.js. It is fully responsive and it is hosted on GitHub Pages.',
-        image: 'https://i.imgur.com/W490sCJ.png',
-        link: 'google.com',
-        github: '',
-        technologies: ['React', 'JS', 'CSS']
+        description: 'This is my portfolio website made in a space theme. Here you may check some of my main projects and know a little more about myself',
+        image: 'https://i.imgur.com/7ffBtAJ.png',
+        link: 'https://dante-terranova.vercel.app/',
+        github: 'https://github.com/BinaryJuan/portfolio.space',
+        technologies: ['React', 'CSS']
     },
     {
         id: 4,
-        name: 'Portfolio',
+        name: 'Quinta Silveria',
         status: 'Live',
-        description: 'This is my portfolio website. It is a single page application built with React.js. It is fully responsive and it is hosted on GitHub Pages.',
-        image: 'https://i.imgur.com/W490sCJ.png',
-        link: 'google.com',
-        github: '',
-        technologies: ['React', 'JS', 'CSS']
+        description: 'A website created for a wedding facility in El Salvador. This was my first freelance experience as a web developer',
+        image: 'https://i.imgur.com/KZiMPOx.png',
+        link: 'https://quintasilveria.com/',
+        github: 'https://github.com/BinaryJuan/QuintaSilveria',
+        technologies: ['HTML', 'JS', 'CSS']
     },
     {
         id: 5,
-        name: 'Portfolio',
+        name: 'Visor',
         status: 'Live',
-        description: 'This is my portfolio website. It is a single page application built with React.js. It is fully responsive and it is hosted on GitHub Pages.',
-        image: 'https://i.imgur.com/W490sCJ.png',
+        description: 'React app that allows you to draw effortless sketches in order to show an idea to someone or to yourself and save the current picture',
+        image: 'https://i.imgur.com/oFPYZ0u.png',
         link: 'google.com',
         github: '',
-        technologies: ['React', 'JS', 'CSS']
+        technologies: ['React', 'CSS']
     },
     {
         id: 6,
-        name: 'Portfolio',
+        name: 'Speedfire',
         status: 'Live',
-        description: 'This is my portfolio website. It is a single page application built with React.js. It is fully responsive and it is hosted on GitHub Pages.',
-        image: 'https://i.imgur.com/W490sCJ.png',
-        link: 'google.com',
-        github: '',
-        technologies: ['React', 'JS', 'CSS']
+        description: 'First React project in which i emulate a simple videogame e-commerce, which contains basic e-commerce operations (cart and product management)',
+        image: 'https://i.imgur.com/oFPYZ0u.png',
+        link: 'https://speedfire.vercel.app/',
+        github: 'https://github.com/BinaryJuan/speedfire',
+        technologies: ['React', 'NodeJS', 'Firebase']
     },
     {
         id: 7,
-        name: 'Portfolio',
-        status: 'Live',
-        description: 'This is my portfolio website. It is a single page application built with React.js. It is fully responsive and it is hosted on GitHub Pages.',
-        image: 'https://i.imgur.com/W490sCJ.png',
-        link: 'google.com',
-        github: '',
-        technologies: ['React', 'JS', 'CSS']
+        name: 'Scrabble',
+        status: 'Pending',
+        description: 'The famous board-and-tile game recreated using Java console. It is still in process since i would like to add RMI and a more friendly graphic interface',
+        image: 'https://i.imgur.com/HK9yQIx.png',
+        link: 'https://github.com/BinaryJuan/Scrabble',
+        github: 'https://github.com/BinaryJuan/Scrabble',
+        technologies: ['Java']
     },
     {
         id: 8,
-        name: 'Portfolio',
-        status: 'Pending',
-        description: 'This is my portfolio website. It is a single page application built with React.js. It is fully responsive and it is hosted on GitHub Pages.',
-        image: 'https://i.imgur.com/W490sCJ.png',
-        link: 'google.com',
-        github: '',
-        technologies: ['React', 'JS', 'CSS']
+        name: 'Broken Chains',
+        status: 'Live',
+        description: 'First project ever which consists of a basic e-commerce based in Argentina. This was built as a way of learning new skills in web devlopment',
+        image: 'https://i.imgur.com/JwXDZuZ.jpeg',
+        link: 'https://binaryjuan.github.io/Broken-Chains/',
+        github: 'https://github.com/BinaryJuan/Broken-Chains',
+        technologies: ['HTML', 'JS', 'CSS']
     }
 ]
 
