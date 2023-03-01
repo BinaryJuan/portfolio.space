@@ -45,9 +45,9 @@ const projects =
         name: 'Visor',
         status: 'Live',
         description: 'React app that allows you to draw effortless sketches in order to show an idea to someone or to yourself and save the current picture',
-        image: 'https://i.imgur.com/oFPYZ0u.png',
-        link: 'google.com',
-        github: '',
+        image: 'https://i.imgur.com/qdLGnvD.png',
+        link: 'https://visor-nine.vercel.app/',
+        github: 'https://github.com/BinaryJuan/visor',
         technologies: ['React', 'CSS']
     },
     {
