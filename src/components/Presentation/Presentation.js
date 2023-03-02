@@ -1,6 +1,6 @@
 import './Presentation.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedinIn, faInstagram, faReact, faSquareJs, faNodeJs, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedinIn, faStackOverflow, faReact, faSquareJs, faNodeJs, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 const Presentation = () => {
@@ -23,8 +23,8 @@ const Presentation = () => {
                             </a>
                         </li>
                         <li>
-                            <a href='https://github.com/BinaryJuan' target='_blank' rel='noreferrer'>
-                                <FontAwesomeIcon className='fa-gradient fa-2xl' icon={faInstagram} />
+                            <a href='https://stackoverflow.com/users/16031354/dante001?tab=profile' target='_blank' rel='noreferrer'>
+                                <FontAwesomeIcon className='fa-gradient fa-2xl' icon={faStackOverflow} />
                             </a>
                         </li>
                     </ul>
