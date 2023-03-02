@@ -23,9 +23,9 @@ const projects =
     {
         id: 3,
         name: 'Discord bot',
-        status: 'Live',
-        description: 'This is my portfolio website made in a space theme. Here you may check some of my main projects and know a little more about myself',
-        image: 'https://i.imgur.com/7ffBtAJ.png',
+        status: 'Pending',
+        description: 'Description pending...',
+        image: 'https://i.imgur.com/lBveLao.jpeg',
         link: 'https://dante-terranova.vercel.app/',
         github: 'https://github.com/BinaryJuan/portfolio.space',
         technologies: ['React', 'CSS']
@@ -63,7 +63,7 @@ const projects =
     {
         id: 7,
         name: 'Scrabble',
-        status: 'Pending',
+        status: 'Live',
         description: 'The famous board-and-tile game recreated using Java console. It is still in process since i would like to add RMI and a more friendly graphic interface',
         image: 'https://i.imgur.com/HK9yQIx.png',
         link: 'https://github.com/BinaryJuan/Scrabble',
