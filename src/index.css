@@ -47,4 +47,9 @@ body {
   height: 1000px;
 }
 
+#home {
+  position: relative;
+  overflow-x: hidden;
+}
+
 /* ===== GENERAL STYLING ===== */
