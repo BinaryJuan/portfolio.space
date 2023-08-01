@@ -41,7 +41,7 @@ const Presentation = () => {
                     </div>
                 </div>
                 <div className='presentationElement cv'>
-                    <a className='downloadCv' href='/cv-english.pdf' download='Terranova-CV'>Download CV <FontAwesomeIcon className='fa-gradient' icon={faArrowDown} /></a>
+                    <a className='downloadCv' href='/cv-espanol.pdf' download='Terranova-CV'>Download CV <FontAwesomeIcon className='fa-gradient' icon={faArrowDown} /></a>
                     <a className='whatsappLink' href='https://api.whatsapp.com/send?phone=541131918140' target='_blank' rel='noreferrer'><FontAwesomeIcon className='fa-gradient' icon={faWhatsapp} /> Let's talk</a>
                 </div>
             </div>
